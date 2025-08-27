@@ -1,0 +1,101 @@
+/* Make image cover the entire background */
+.home-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Push behind all content */
+}
+
+/* Optional: add overlay effect for readability */
+.home-form {
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.user-link {
+  padding: 2.5rem;
+  word-spacing: 10px;
+  justify-content: space-between;
+}
+
+.mr {
+  margin-right: 16px;
+}
+
+.ml {
+  margin-left: 16px;
+}
+.slider-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  padding: 40px 0 20px;
+  z-index: 999;
+}
+
+.slider-title {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 6px 20px;
+  border-radius: 8px;
+  text-shadow: 1px 1px 3px black;
+  z-index: 1000;
+}
+
+.slider-track {
+  display: flex;
+  width: fit-content;
+  animation: scrollSlider 30s linear infinite;
+}
+
+.slider-img {
+  height: 120px;
+  width: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: transform 0.3s;
+}
+
+.slider-img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scrollSlider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+

@@ -1,0 +1,42 @@
+.signup {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.signup h4 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.signup label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.signup input,
+.signup select {
+  height: 45px;
+  font-size: 15px;
+}
+
+.signup .btn {
+  width: 100%;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.signup span {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}

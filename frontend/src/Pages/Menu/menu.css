@@ -1,0 +1,80 @@
+/* General Container */
+.menu-container {
+  padding: 30px 20px;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top Logo or Menu Image */
+.menu-top-image {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.menu-title {
+  font-size: 2.5rem;
+  color: #003580;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Grid Layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Card */
+.menu-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Wrapper */
+.menu-image-wrapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.menu-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover .menu-image {
+  transform: scale(1.05);
+}
+
+/* Name Text */
+.menu-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin: 16px;
+  text-align: center;
+}

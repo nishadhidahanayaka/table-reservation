@@ -1,0 +1,81 @@
+.gallery-container {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #f6f8f9, #e9ebee);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .gallery-title {
+    font-size: 28px;
+  }
+}

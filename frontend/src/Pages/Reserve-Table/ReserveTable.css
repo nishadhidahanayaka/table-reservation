@@ -1,0 +1,45 @@
+.reserve-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.reserve-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reserve-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.reserve-form input,
+.reserve-form select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #999;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.reserve-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reserve-form button:hover {
+  background-color: #449d44;
+}

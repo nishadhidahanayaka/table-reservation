@@ -1,0 +1,31 @@
+/* Full page background */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Centered login form */
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9); /* semi-transparent */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.login input {
+  height: 40px;
+}
+
+.login button {
+  width: 100%;
+}

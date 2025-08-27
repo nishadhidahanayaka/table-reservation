@@ -1,0 +1,29 @@
+.userInfo {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.profileContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes it a circle */
+  object-fit: cover;
+  border: 3px solid #007bff;
+  margin-bottom: 20px;
+}
+
+.userInfo {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  display: inline-block;
+  text-align: left;
+}
