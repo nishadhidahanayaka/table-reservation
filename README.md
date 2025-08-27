@@ -1,0 +1,1 @@
+This full-stack project is a Restaurant Management System built with React, Node.js, and MongoDB. It allows customers to reserve tables, check table availability, and view menu items, while providing admins with tools to manage restaurant operations.
